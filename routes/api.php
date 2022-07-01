@@ -1,6 +1,6 @@
 <?php
 
-use Arifpay\Arifpay\Lib\ArifPay;
+use Arifpay\Arifpay\ArifPay;
 use Arifpay\Arifpay\Lib\ArifpayBeneficary;
 use Arifpay\Arifpay\Lib\ArifpayCheckoutItem;
 use Arifpay\Arifpay\Lib\ArifpayCheckoutRequest;
@@ -52,4 +52,9 @@ Route::get("/test", function (Request $request) {
     );
     $session = $arifpay->create($data, new ArifpayOptions(true));
     return $session;
+});
+
+Route::get("/fetch/{id}", function (Request $request, $id) {
+    $arifpay = new ArifPay('16WD8h8ab2xQjn1IFR6Lk6qFH4K5nc14');
+    return $arifpay->fetch($id,new ArifpayOptions(true));
 });
