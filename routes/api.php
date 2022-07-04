@@ -53,3 +53,8 @@ Route::get("/test", function (Request $request) {
     $session = $arifpay->create($data, new ArifpayOptions(false));
     return $session;
 });
+
+Route::get("/fetch/{id}", function (Request $request, $id) {
+    $arifpay = new ArifPay('16WD8h8ab2xQjn1IFR6Lk6qFH4K5nc14');
+    return $arifpay->fetch($id,new ArifpayOptions(true));
+});
