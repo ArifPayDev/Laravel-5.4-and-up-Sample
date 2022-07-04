@@ -1,6 +1,6 @@
 <?php
 
-use Arifpay\Arifpay\Lib\ArifPay;
+use Arifpay\Arifpay\ArifPay;
 use Arifpay\Arifpay\Lib\ArifpayBeneficary;
 use Arifpay\Arifpay\Lib\ArifpayCheckoutItem;
 use Arifpay\Arifpay\Lib\ArifpayCheckoutRequest;
@@ -25,20 +25,20 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 
 
 Route::get("/test", function (Request $request) {
-    $arifpay = new ArifPay('your-api-key');
+    $arifpay = new ArifPay('16WD8h8ab2xQjn1IFR6Lk6qFH4K5nc14');
     $expired = "2023-06-06";
     $data = new ArifpayCheckoutRequest(
         "https://api.arifpay.com",
         floor(rand() * 10000) . "",
         'https://api.arifpay.com',
         'https://gateway.arifpay.net/test/callback',
-        'https://gateway.arifpay.net',
+        'https://127.0.0.1/beu-laravel',
         ["CARD"],
         $expired,
         [
             ArifpayCheckoutItem::fromJson([
                 "name" => 'Bannana',
-                "price" => 10.0,
+                "price" => 45,
                 "quantity" => 1,
             ]),
         ],
@@ -50,6 +50,6 @@ Route::get("/test", function (Request $request) {
             ]),
         ],
     );
-    $session = $arifpay->create($data, new ArifpayOptions(true));
+    $session = $arifpay->create($data, new ArifpayOptions(false));
     return $session;
 });
