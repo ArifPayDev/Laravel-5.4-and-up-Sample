@@ -1,11 +1,13 @@
 <?php
 
 use Arifpay\Arifpay\ArifPay;
+use Arifpay\Arifpay\Helper\ArifpaySupport;
 use Arifpay\Arifpay\Lib\ArifpayBeneficary;
 use Arifpay\Arifpay\Lib\ArifpayCheckoutItem;
 use Arifpay\Arifpay\Lib\ArifpayCheckoutRequest;
 use Arifpay\Arifpay\Lib\ArifpayOptions;
 use Illuminate\Http\Request;
+use Illuminate\Support\Carbon;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -25,8 +27,9 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 
 
 Route::get("/test", function (Request $request) {
-    $arifpay = new ArifPay('your-api-key');
-    $expired = "2023-06-06";
+    $arifpay = new ArifPay('your-api');
+    $dt = Carbon::now()->addHours(6);
+    $expired = ArifpaySupport::getExpireDateFromDate($dt);
     $data = new ArifpayCheckoutRequest(
         "https://api.arifpay.com",
         floor(rand() * 10000) . "",

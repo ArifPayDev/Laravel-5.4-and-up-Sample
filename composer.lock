@@ -4,20 +4,20 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "f7c9f3c43d6f0ef80dc6fdaa9b0423a7",
+    "content-hash": "e2a7b9efbd63804b8c2478f87a458550",
     "packages": [
         {
             "name": "arifpay/arifpay",
-            "version": "v1.1.0",
+            "version": "v1.3.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Arifpay-net/laravel.git",
-                "reference": "4ec0ea463091d485649b0e780696f6398d39bf1b"
+                "reference": "d274719fc705520204de16afdaab970d21cd2c93"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Arifpay-net/laravel/zipball/4ec0ea463091d485649b0e780696f6398d39bf1b",
-                "reference": "4ec0ea463091d485649b0e780696f6398d39bf1b",
+                "url": "https://api.github.com/repos/Arifpay-net/laravel/zipball/d274719fc705520204de16afdaab970d21cd2c93",
+                "reference": "d274719fc705520204de16afdaab970d21cd2c93",
                 "shasum": ""
             },
             "require": {
@@ -73,9 +73,9 @@
             ],
             "support": {
                 "issues": "https://github.com/Arifpay-net/laravel/issues",
-                "source": "https://github.com/Arifpay-net/laravel/tree/v1.1.0"
+                "source": "https://github.com/Arifpay-net/laravel/tree/v1.3.0"
             },
-            "time": "2022-06-24T10:36:43+00:00"
+            "time": "2022-07-15T07:55:02+00:00"
         },
         {
             "name": "asm89/stack-cors",
@@ -2922,16 +2922,16 @@
         },
         {
             "name": "spatie/laravel-package-tools",
-            "version": "1.12.0",
+            "version": "1.12.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/spatie/laravel-package-tools.git",
-                "reference": "9e6c0382553f1317c02f1ae0ee71c64821eb5af0"
+                "reference": "09f80fa240d44fafb1c70657c74ee44ffa929357"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/spatie/laravel-package-tools/zipball/9e6c0382553f1317c02f1ae0ee71c64821eb5af0",
-                "reference": "9e6c0382553f1317c02f1ae0ee71c64821eb5af0",
+                "url": "https://api.github.com/repos/spatie/laravel-package-tools/zipball/09f80fa240d44fafb1c70657c74ee44ffa929357",
+                "reference": "09f80fa240d44fafb1c70657c74ee44ffa929357",
                 "shasum": ""
             },
             "require": {
@@ -2969,7 +2969,7 @@
             ],
             "support": {
                 "issues": "https://github.com/spatie/laravel-package-tools/issues",
-                "source": "https://github.com/spatie/laravel-package-tools/tree/1.12.0"
+                "source": "https://github.com/spatie/laravel-package-tools/tree/1.12.1"
             },
             "funding": [
                 {
@@ -2977,7 +2977,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2022-06-19T20:01:24+00:00"
+            "time": "2022-06-28T14:29:26+00:00"
         },
         {
             "name": "swiftmailer/swiftmailer",
