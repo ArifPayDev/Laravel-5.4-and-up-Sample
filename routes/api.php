@@ -35,13 +35,13 @@ Route::get("/test", function (Request $request) {
         floor(rand() * 10000) . "",
         'https://api.arifpay.com',
         'https://gateway.arifpay.net/test/callback',
-        'https://gateway.arifpay.net',
+        'https://127.0.0.1/beu-laravel',
         ["CARD"],
         $expired,
         [
             ArifpayCheckoutItem::fromJson([
                 "name" => 'Bannana',
-                "price" => 10.0,
+                "price" => 45,
                 "quantity" => 1,
             ]),
         ],
@@ -53,7 +53,7 @@ Route::get("/test", function (Request $request) {
             ]),
         ],
     );
-    $session = $arifpay->create($data, new ArifpayOptions(true));
+    $session = $arifpay->create($data, new ArifpayOptions(false));
     return $session;
 });
 
