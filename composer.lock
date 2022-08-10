@@ -4,6 +4,22 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
+<<<<<<< HEAD
+    "content-hash": "e2a7b9efbd63804b8c2478f87a458550",
+    "packages": [
+        {
+            "name": "arifpay/arifpay",
+            "version": "v1.3.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Arifpay-net/laravel.git",
+                "reference": "d274719fc705520204de16afdaab970d21cd2c93"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Arifpay-net/laravel/zipball/d274719fc705520204de16afdaab970d21cd2c93",
+                "reference": "d274719fc705520204de16afdaab970d21cd2c93",
+=======
     "content-hash": "dfe8069cf78980fee4d29ccab118c593",
     "packages": [
         {
@@ -18,6 +34,7 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/Arifpay-net/laravel/zipball/40b84cfee0a884802999e948cde975628a4de8f0",
                 "reference": "40b84cfee0a884802999e948cde975628a4de8f0",
+>>>>>>> 3fe1db61634dd814ba2433cca31273b1548e9ae6
                 "shasum": ""
             },
             "require": {
@@ -73,9 +90,15 @@
             ],
             "support": {
                 "issues": "https://github.com/Arifpay-net/laravel/issues",
+<<<<<<< HEAD
+                "source": "https://github.com/Arifpay-net/laravel/tree/v1.3.0"
+            },
+            "time": "2022-07-15T07:55:02+00:00"
+=======
                 "source": "https://github.com/Arifpay-net/laravel/tree/v1.2.0"
             },
             "time": "2022-06-30T11:08:36+00:00"
+>>>>>>> 3fe1db61634dd814ba2433cca31273b1548e9ae6
         },
         {
             "name": "asm89/stack-cors",
